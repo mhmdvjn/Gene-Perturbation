@@ -147,9 +147,12 @@ class PertData:
 
         """
         
-        if data_name in ['norman', 'adamson', 'dixit', 
+        if data_name in ['norman',
+                         'adamson',
+                         'dixit', 
                          'replogle_k562_essential', 
                          'replogle_rpe1_essential']:
+            
             ## load from harvard dataverse
             if data_name == 'norman':
                 url = 'https://dataverse.harvard.edu/api/access/datafile/6154020'
@@ -158,11 +161,10 @@ class PertData:
             elif data_name == 'dixit':
                 url = 'https://dataverse.harvard.edu/api/access/datafile/6154416'
             elif data_name == 'replogle_k562_essential':
-                ## Note: This is not the complete dataset and has been filtered
                 url = 'https://dataverse.harvard.edu/api/access/datafile/7458695'
             elif data_name == 'replogle_rpe1_essential':
-                ## Note: This is not the complete dataset and has been filtered
                 url = 'https://dataverse.harvard.edu/api/access/datafile/7458694'
+                
             data_path = os.path.join(self.data_path, data_name)
             zip_data_download_wrapper(url, data_path, self.data_path)
             self.dataset_name = data_path.split('/')[-1]

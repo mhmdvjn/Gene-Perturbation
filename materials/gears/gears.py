@@ -26,7 +26,7 @@ class GEARS:
     """
 
     def __init__(self, pert_data, 
-                 device = 'cuda',
+                 device = 'cpu',
                  weight_bias_track = False, 
                  proj_name = 'GEARS', 
                  exp_name = 'GEARS'):
@@ -276,7 +276,11 @@ class GEARS:
                 new_state_dict[name] = v
             state_dict = new_state_dict
         
-        self.model.load_state_dict(state_dict)
+        missing_keys, unexpected_keys = self.model.load_state_dict(state_dict, strict=False)
+        if missing_keys:
+            print_sys("Warning: missing keys in state_dict (kept initialized): " + str(missing_keys))
+        if unexpected_keys:
+            print_sys("Warning: unexpected keys in state_dict (ignored): " + str(unexpected_keys))
         self.model = self.model.to(self.device)
         self.best_model = self.model
     
@@ -481,7 +485,6 @@ class GEARS:
         if save_file:
             plt.savefig(save_file, bbox_inches='tight')
         plt.show()
-    
     
     def train(self, epochs = 20, 
               lr = 1e-3,
