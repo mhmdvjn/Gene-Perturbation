@@ -15,3 +15,15 @@ and downstream biological interpretation.
 - Machine learning-based modeling
 - Bootstrap analysis
 - Gene Ontology enrichment analysis
+
+### 2. Prior Biology
+[README: Does Prior Biology Help?](./PriorBiology/)
+
+Test whether prior biology knowledge improves GEARS generalization
+to held-out combinatorial gene pairs by comparing three model variants:
+full GEARS (GO + coexpression), GEARS without GO, and GEARS without coexpression.
+
+**Contents:**
+- Three trained GEARS variants
+- Held-out prediction error comparison
+- Conclusion on prior biology contribution
