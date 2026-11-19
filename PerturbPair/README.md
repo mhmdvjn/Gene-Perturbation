@@ -1,7 +1,6 @@
 ## Prioritize Gene Pairs
 
-### Research question
-> Which held-out gene pairs alter the response most?
+> #### Research question:Which held-out gene pairs alter the response most?
 
 ### Deliverables
 - Ranked pairs
@@ -30,8 +29,8 @@ A higher score means a larger predicted change from control. <mark style="backgr
 ---
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-  <img src="assets/distribution.png" alt="Distribution" style="height: 300px; width: auto;">
-  <img src="assets/top_pairs.png" alt="Top pairs" style="height: 300px; width: auto;">
+  <img src="assets/distribution.png" alt="Distribution" style="height: 250px; width: auto;">
+  <img src="assets/top_pairs.png" alt="Top pairs" style="height: 250px; width: auto;">
 </div>
 
 ## References
