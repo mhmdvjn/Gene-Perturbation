@@ -1,0 +1,27 @@
+target,score,dependency_score,drug_coverage,associated_drugs,rank
+CEBPB,0.04557948287540778,1.0,clinical_or_indirect,['ST101 (Phase 2 antagonist)'],1
+SPI1,0.03319315500964123,1.0,no_coverage,[],2
+JUN,0.029296906678027406,1.0,no_coverage,[],3
+COL2A1,0.026254420515207776,1.0,no_coverage,[],4
+PTPN9,0.017468631919638235,1.0,no_coverage,[],5
+DUSP9,0.01745322710188029,1.0,no_coverage,[],6
+PTPN13,0.01725079398077218,1.0,no_coverage,[],7
+EGR1,0.013279559886290681,1.0,no_coverage,[],8
+FOXL2,0.0118509911474613,1.0,no_coverage,[],9
+OSR2,0.010922431291435402,1.0,no_coverage,[],10
+PRDM1,0.00946649845945197,1.0,no_coverage,[],11
+PRTG,0.009289232408171602,1.0,no_coverage,[],12
+MEIS1,0.008810727238386329,1.0,no_coverage,[],13
+C3orf72,0.008528919713997508,1.0,no_coverage,[],14
+CELF2,0.008510829156786194,1.0,no_coverage,[],15
+SLC4A1,0.00849678860693314,1.0,no_coverage,[],16
+ARID1A,0.008434429291307654,1.0,clinical_or_indirect,"['tazemetostat (synthetic lethal)', 'ceralasertib (synthetic lethal)']",17
+CBL,0.008172769640303761,1.0,no_coverage,[],18
+CDKN1B,0.008156570956269843,1.0,no_coverage,[],19
+BCORL1,0.007964666005900898,1.0,no_coverage,[],20
+CKS1B,0.007933949560101813,1.0,no_coverage,[],21
+CDKN1C,0.007909145551051119,1.0,no_coverage,[],22
+CDKN1A,0.00784439029770033,1.0,no_coverage,[],23
+S1PR2,0.007692888505414755,1.0,no_coverage,[],24
+BCL2L11,0.007491604395097428,1.0,clinical_or_indirect,['venetoclax (pathway mimetic)'],25
+ZBTB10,0.007445379013333114,1.0,no_coverage,[],26

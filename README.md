@@ -27,3 +27,15 @@ full GEARS (GO + coexpression), GEARS without GO, and GEARS without coexpression
 - Three trained GEARS variants
 - Held-out prediction error comparison
 - Conclusion on prior biology contribution
+
+### 3. Druggable Hypotheses
+[README: Find Druggable Hypotheses](./DruggableHypotheses/)
+
+Nominate gene targets whose perturbation suggests a druggable hypothesis by
+combining GEARS-predicted transcriptional responses with gene dependency and
+drug-target annotation evidence.
+
+**Contents:**
+- GEARS-predicted response per candidate target
+- Dependency + drug-target annotation overlay
+- Prioritized testable-target list with caveat

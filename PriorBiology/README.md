@@ -1,9 +1,9 @@
 # Does Prior Biology Help?
 
-> #### Research question: Does prior biology knowledge improve GEARS generalization to held-out combinatorial gene pairs?
+>  Research question: <mark style="background: #FFB86CA6;">Does prior biology knowledge improve GEARS generalization to held-out combinatorial gene pairs</mark>?
 
 ### Deliverables
-- Three trained GEARS variants (full / remove GO / remove coexpression)
+- <mark style="background: #FFB86CA6;">Three trained GEARS variants (full / remove GO / remove coexpression)</mark>
 - Held-out prediction error comparison
 - Conclusion on prior biology contribution
 
@@ -24,13 +24,10 @@ Modify the baseline GEARS pipeline as follows:
    - **(b)** coexpression graph only (remove GO)
    - **(c)** GO graph only (remove coexpression)
 
-2. For each held-out combinatorial gene pair, predict the response profile with each variant.
-
-3. Compute held-out prediction error per variant (mean squared error against observed response).
-
-4. Compare error across the three models to quantify the value of each prior.
-
-5. Report whether full GEARS, GO-only, or coexpression-only achieves the lowest held-out error.
+1. For each held-out combinatorial gene pair, predict the response profile with each variant.
+2. Compute held-out prediction error per variant (mean squared error against observed response).
+3. Compare error across the three models to quantify the value of each prior.
+4. Report whether full GEARS, GO-only, or coexpression-only achieves the lowest held-out error.
 
 ## Implementation
 
